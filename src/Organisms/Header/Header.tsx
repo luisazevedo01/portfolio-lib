@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { GoHome } from 'react-icons/go';
 import { ImProfile } from 'react-icons/im';
 import { ImNewspaper } from 'react-icons/im';
 import { RiMailSendLine } from 'react-icons/ri';
 import { GiBookCover } from 'react-icons/gi';
 import './Header.css';
-import { FC } from 'react';
 
 //TODO: Routing system.
 //TODO: Change components nomenclature

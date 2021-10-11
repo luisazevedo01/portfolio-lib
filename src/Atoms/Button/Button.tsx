@@ -1,29 +1,20 @@
 import React, { FC, HTMLAttributes, ReactNode } from 'react';
+import './Button.css';
 
 export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   /** Provide a text for the Button */
   children: ReactNode;
   /** Pick a variant for the Button*/
-  variant?: 'primary' | 'secondary';
+  variant?: 'dark' | 'light';
 }
 
 export const Button: FC<ButtonProps> = ({
   children,
-  variant = 'primary',
+  variant = 'dark',
   ...props
 }) => {
   return (
-    <button
-      {...props}
-      style={{
-        backgroundColor: variant === 'primary' ? 'blue' : 'green',
-        color: 'white',
-        border: 'none',
-        borderRadius: '100px',
-        padding: '10px',
-        cursor: 'pointer',
-      }}
-    >
+    <button id={variant === 'dark' ? 'dark-button' : 'light-button'} {...props}>
       {children}
     </button>
   );

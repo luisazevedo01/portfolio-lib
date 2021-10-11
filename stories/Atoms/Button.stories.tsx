@@ -17,9 +17,9 @@ export default meta;
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
-export const Default = Template.bind({});
-export const Secondary = Template.bind({});
+export const Dark = Template.bind({});
+export const Light = Template.bind({});
 
-Secondary.args = {
-  variant: 'secondary',
+Light.args = {
+  variant: 'light',
 };
