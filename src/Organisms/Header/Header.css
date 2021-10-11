@@ -1,0 +1,22 @@
+.header {
+    width: 100vw;
+  background-color: #1b242f;
+  margin: 0px;
+  height: 4rem;
+  border-bottom: 3px solid #04c2c9;
+}
+
+.header_list {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.header_list > svg {
+  color: white;
+  margin-right: 16%;
+}
+
+.header_list:first-child {
+  margin-left: 16%;
+}
